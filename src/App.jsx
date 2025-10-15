@@ -1,11 +1,16 @@
-import Layout from './components/Layout'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import HomePage from './pages/Home'
+import ProjectsPage from './pages/Projects'
+import './App.css'
 
 function App() {
   return (
-    <Layout>
-      <h1 className="text-3xl font-bold">Welcome to my website!</h1>
-      <p className="mt-4">This content appears inside the Layout.</p>
-    </Layout>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/projects" element={<ProjectsPage />} />
+      </Routes>
+    </BrowserRouter>
   )
 }
 
