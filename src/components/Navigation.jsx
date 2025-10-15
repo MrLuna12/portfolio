@@ -4,6 +4,10 @@ import { Menu, X } from 'lucide-react'
 
 function Navigation() {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+    const closeMobileMenu = () => {
+        setIsMobileMenuOpen(false)
+    }
     return (
         <nav className='fixed top-0 left-0 right-0 z-50 bg-white border-b border-gray-200'>
             <div className='max-w-6xl mx-auto px-6 py-4'>
@@ -41,6 +45,25 @@ function Navigation() {
                         )}
                     </button>
                 </div>
+                {isMobileMenuOpen && (
+                    <div className='md:hidden mt-4 pb-4 flex flex-col gap-4 items-center'>
+                        <Link to="/#about" onClick={closeMobileMenu} className='text-sm text-gray-600 hover:text-gray-900 transition-colors'>
+                            About
+                        </Link>
+
+                        <Link to="/#experience" onClick={closeMobileMenu} className='text-sm text-gray-600 hover:text-gray-900 transition-colors'>
+                            Experience
+                        </Link>
+
+                        <Link to="/projects" onClick={closeMobileMenu} className='text-sm text-gray-600 hover:text-gray-900 transition-colors'>
+                            Projects
+                        </Link>
+
+                        <Link to="/#contact" onClick={closeMobileMenu} className='text-sm text-gray-600 hover:text-gray-900 transition-colors'>
+                            Contact
+                        </Link>
+                    </div>
+                )}
             </div>
         </nav>
     )
