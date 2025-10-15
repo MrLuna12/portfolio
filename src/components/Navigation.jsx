@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
-import { Menu} from 'lucide-react'
+import { Menu, X } from 'lucide-react'
 
 function Navigation() {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -34,7 +34,11 @@ function Navigation() {
                     </div>
 
                     <button onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)} className="md:hidden p-2 text-gray-600">
-                        <Menu className="w-6 h-6" />
+                        {isMobileMenuOpen ? (
+                            <X className="w-6 h-6" />
+                        ) : (
+                            <Menu className="w-6 h-6" />
+                        )}
                     </button>
                 </div>
             </div>
