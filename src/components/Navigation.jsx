@@ -20,21 +20,21 @@ function Navigation() {
                     </Link>
 
                     <div className='hidden md:flex items-center gap-8'>
-                        <Link to="/#about" className='text-sm text-gray-600 hover:text-gray-900 transition-colors'>
+                        <a href="#about" className='text-sm text-gray-600 hover:text-gray-900 transition-colors'>
                             About
-                        </Link>
+                        </a>
 
-                        <Link to="/#experience" className='text-sm text-gray-600 hover:text-gray-900 transition-colors'>
+                        <a href="#experience" className='text-sm text-gray-600 hover:text-gray-900 transition-colors'>
                             Experience
-                        </Link>
+                        </a>
 
                         <Link to="/projects" className='text-sm text-gray-600 hover:text-gray-900 transition-colors'>
                             Projects
                         </Link>
 
-                        <Link to="/#contact" className='text-sm text-gray-600 hover:text-gray-900 transition-colors'>
+                        <a href="#contact" className='text-sm text-gray-600 hover:text-gray-900 transition-colors'>
                             Contact
-                        </Link>
+                        </a>
                     </div>
 
                     <button onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)} className="md:hidden p-2 text-gray-600">
