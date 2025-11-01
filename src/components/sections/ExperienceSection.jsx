@@ -11,12 +11,12 @@ function ExperienceSection() {
             role: 'Software Engineer',
             period: 'March 2024 - Present',
             description: [
-                'Developed full-stack features for educational platforms using Ruby on Rails, Stimulus.js, Turbo, and PostgreSQL',
-                'Collaborated within an agile team to engineer AI-powered chatbots for student support using Amazon Bedrock',
+                'Developed full-stack features for educational platforms serving thousands of students',
+                'Collaborated within an agile team to engineer AI-powered chatbots for student support',
                 'Gained leadership experience by rotating as sprint lead, facilitating planning sessions and retrospectives',
-                'Enhanced code quality through daily pair programming and participated in technical book clubs',
+                'Enhanced code quality through daily pair programming and technical book clubs',
             ],
-            technologies: ['Ruby on Rails', 'Stimulus.js', 'PostgreSQL', 'AWS'],
+            technologies: ['Ruby on Rails', 'Stimulus.js', 'C#', '.NET', 'PostgreSQL', 'AWS'],
         },
         {
             company: 'ONEOK, Inc',
@@ -24,23 +24,23 @@ function ExperienceSection() {
             role: 'Software Engineer Intern',
             period: 'May 2023 - August 2023',
             description: [
-                'Collaborated with six interns to develop a URL shortener web application using Java and the Spring Boot Framework',
-                'Gathered customer requirements to guide software development, ensuring a more user-centric application',
-                'Efficiently managed code changes with Git and automated builds using Azure DevOps',
-                'Conducted daily stand-up meetings and utilized Azure Boards for project organization',
+                'Collaborated with a team to develop a web application using modern frameworks and best practices',
+                'Gathered customer requirements to guide software development and ensure user-centric solutions',
+                'Managed code changes and automated builds using industry-standard DevOps tools',
+                'Participated in daily stand-up meetings and utilized project management tools for organization',
             ],
             technologies: ['Java', 'Spring Boot', 'Azure DevOps', 'Git'],
         },
         {
             company: 'Oral Roberts University',
             shortName: 'ORU',
-            role: 'Teaching Assistant',
+            role: 'Computer Science Teaching Assistant',
             period: 'August 2022 - December 2022',
             description: [
-                'Conducted weekly tutoring sessions covering Python and fundamental computer science concepts for 25 students',
-                'Graded over 250 Python coding assignments and provided constructive feedback',
-                'Maintained comprehensive tracking of attendance, participation, and grades',
-                'Collaborated with three fellow TAs to optimize class time and resources',
+                'Conducted weekly tutoring sessions covering programming fundamentals for 25 students',
+                'Graded coding assignments and provided constructive feedback for continuous improvement',
+                'Maintained comprehensive tracking of student progress and performance metrics',
+                'Collaborated with fellow TAs to optimize learning resources and class effectiveness',
             ],
             technologies: ['Python', 'Education', 'Mentoring'],
         },
@@ -58,28 +58,31 @@ function ExperienceSection() {
                     </div>
 
                     <div className="flex flex-col md:flex-row gap-8">
-                        <div className="flex md:flex-col gap-3 overflow-x-auto">
+                        <div className="flex flex-col gap-2">
                             {experiences.map((exp, index) => (
                                 <button
                                     key={exp.company}
                                     onClick={() => setActiveIndex(index)}
-                                    className={`px-3 py-2 text-sm text-left border-l-2 transition-colors whitespace-nowrap ${activeIndex === index
+                                    className={`px-4 py-3 text-left border-l-2 transition-colors ${activeIndex === index
                                         ? 'border-blue-500 text-blue-500 bg-blue-50'
                                         : 'border-gray-200 text-gray-600 hover:bg-gray-100'
                                         }`}
                                 >
                                     <span className="md:hidden">{exp.shortName}</span>
                                     <span className="hidden md:inline">{exp.company}</span>
+
                                 </button>
                             ))}
                         </div>
 
                         <div className="flex-1 space-y-6">
-                            <div>
+                            <div className='flex flex-col'>
                                 <h3 className="text-2xl font-bold">
                                     {experiences[activeIndex].role}
-                                    <span className="text-blue-500"> @ {experiences[activeIndex].company}</span>
                                 </h3>
+                                <h4 className="text-lg text-blue-500 font-semibold">
+                                    {experiences[activeIndex].company}
+                                </h4>
                                 <p className="text-sm text-gray-600 font-mono mt-1">
                                     {experiences[activeIndex].period}
                                 </p>
