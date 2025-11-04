@@ -4,6 +4,7 @@ import Footer from '../components/Footer'
 import HeroSection from '../components/sections/HeroSection'
 import AboutSection from '../components/sections/AboutSection'
 import ExperienceSection from '../components/sections/ExperienceSection'
+import ProjectsSection from '../components/sections/ProjectsSection';
 
 function Home() {
     return (
@@ -12,6 +13,7 @@ function Home() {
             <HeroSection />
             <AboutSection />
             <ExperienceSection />
+            <ProjectsSection />
             <Footer />
         </>
     )
