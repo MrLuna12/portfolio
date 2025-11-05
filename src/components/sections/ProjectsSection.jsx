@@ -1,6 +1,5 @@
-import { FiCode, FiGithub } from 'react-icons/fi'
+import { FiCode, FiGithub, FiExternalLink } from 'react-icons/fi'
 import { HiSparkles } from 'react-icons/hi'
-import { Link } from 'react-router-dom'
 
 function ProjectsSection() {
     const featuredProjects = [
@@ -129,17 +128,30 @@ function ProjectsSection() {
                                         </div>
                                     </div>
 
-                                    {/* Footer: Action Button - always at bottom */}
-                                    <div className="p-6 pt-0">
+                                    {/* Footer: Action Buttons - always at bottom */}
+                                    <div className="p-6 pt-0 flex gap-2">
                                         <a
                                             href={project.github}
                                             target="_blank"
                                             rel="noopener noreferrer"
-                                            className="w-full flex items-center justify-center gap-2 px-4 py-2 border border-gray-300 rounded-lg text-sm font-medium text-gray-700 hover:bg-gray-50 transition-colors"
+                                            className={`flex items-center justify-center gap-2 px-4 py-2 border border-gray-300 rounded-lg text-sm font-medium text-gray-700 hover:bg-gray-50 transition-colors ${project.live ? 'flex-1' : 'w-full'}`}
                                         >
                                             <FiGithub className="h-4 w-4" />
                                             View Code
                                         </a>
+
+                                        {/* Live Demo button - only if live URL exists */}
+                                        {project.live && (
+                                            <a
+                                                href={project.live}
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                className="flex-1 flex items-center justify-center gap-2 px-4 py-2 bg-blue-500 text-white rounded-lg text-sm font-medium hover:bg-blue-600 transition-colors"
+                                            >
+                                                <FiExternalLink className="h-4 w-4" />
+                                                Live Demo
+                                            </a>
+                                        )}
                                     </div>
                                 </div>
                             ))}
@@ -147,7 +159,7 @@ function ProjectsSection() {
                     )}
                 </div>
             </div>
-        </section >
+        </section>
     )
 }
 
