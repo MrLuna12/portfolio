@@ -2,41 +2,12 @@ import { FiCode, FiGithub, FiExternalLink } from 'react-icons/fi'
 import { HiSparkles } from 'react-icons/hi'
 
 function ProjectsSection() {
-    const featuredProjects = [
-        {
-            id: 1,
-            title: 'Grocery List Application',
-            description: 'A mobile grocery list application with React Native frontend and Ruby on Rails API backend. Features include item categorization, quantity tracking, and shopping history for improved grocery planning.',
-            image: '/grocery-list-preview.png', // We'll handle images later
-            technologies: ['React Native', 'Ruby on Rails', 'PostgreSQL'],
-            github: 'https://github.com/MrLuna12/grocery-list-frontend',
-            live: null, // No live demo
-        },
-        {
-            id: 2,
-            title: 'Pizza Order Management',
-            description: 'A web application built with Laravel for managing pizza orders and toppings using CRUD operations. Features MySQL database with migrations, organized MVC architecture, and comprehensive unit testing.',
-            image: '/pizza-app-preview.png',
-            technologies: ['PHP', 'Laravel', 'MySQL', 'Bootstrap'],
-            github: 'https://github.com/MrLuna12/pizza-app',
-            live: null,
-        },
-        {
-            id: 3,
-            title: 'Student Points Management System',
-            description: 'A comprehensive web application for managing student points and rewards. Built with Laravel and Livewire for real-time interactions, featuring secure authentication and transparent transaction tracking.',
-            image: '/student-points-preview.png',
-            technologies: ['PHP', 'Laravel', 'Livewire', 'MySQL', 'Bootstrap'],
-            github: 'https://github.com/MrLuna12/kidscash-Student-Points-Management-System',
-            live: null,
-        },
-    ]
+    const featuredProjects = [];
 
     return (
         <section id="projects" className="py-24 px-6">
             <div className="max-w-6xl mx-auto">
                 <div className="space-y-12">
-                    {/* Heading */}
                     <div className="space-y-4">
                         <h2 className="text-3xl md:text-4xl font-bold">
                             <span className="text-blue-500 font-mono text-lg">03.</span> Featured Projects
@@ -48,7 +19,6 @@ function ProjectsSection() {
                         </p>
                     </div>
 
-                    {/* Empty State */}
                     {featuredProjects.length === 0 && (
                         <div className="flex flex-col items-center justify-center py-16 px-6">
                             <div className="relative mb-8">
@@ -90,7 +60,6 @@ function ProjectsSection() {
                         </div>
                     )}
 
-                    {/* Project Cards */}
                     {featuredProjects.length > 0 && (
                         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                             {featuredProjects.map((project) => (
@@ -98,7 +67,6 @@ function ProjectsSection() {
                                     key={project.id}
                                     className="bg-white rounded-lg overflow-hidden border border-gray-200 hover:shadow-lg transition-all flex flex-col"
                                 >
-                                    {/* Image - aspect-video ratio */}
                                     <div className="aspect-video bg-gray-100 flex items-center justify-center">
                                         <div className="flex items-center gap-2 text-gray-400">
                                             <FiCode className="h-8 w-8" />
@@ -106,7 +74,6 @@ function ProjectsSection() {
                                         </div>
                                     </div>
 
-                                    {/* Header: Title + Description */}
                                     <div className="p-6">
                                         <h3 className="text-xl font-bold mb-3">{project.title}</h3>
                                         <p className="text-sm text-gray-600 leading-relaxed">
@@ -114,7 +81,6 @@ function ProjectsSection() {
                                         </p>
                                     </div>
 
-                                    {/* Content: Tech Tags - grows to push footer down */}
                                     <div className="px-6 pb-4 grow">
                                         <div className="flex flex-wrap gap-2">
                                             {project.technologies.map((tech) => (
@@ -128,7 +94,6 @@ function ProjectsSection() {
                                         </div>
                                     </div>
 
-                                    {/* Footer: Action Buttons - always at bottom */}
                                     <div className="p-6 pt-0 flex gap-2">
                                         <a
                                             href={project.github}
@@ -140,7 +105,6 @@ function ProjectsSection() {
                                             View Code
                                         </a>
 
-                                        {/* Live Demo button - only if live URL exists */}
                                         {project.live && (
                                             <a
                                                 href={project.live}
