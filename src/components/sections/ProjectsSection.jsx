@@ -34,8 +34,10 @@ function ProjectsSection() {
                                     <HiSparkles className="h-5 w-5 text-blue-500" />
                                 </h3>
                                 <p className="text-gray-600 leading-relaxed">
-                                    I'm currently building some exciting projects that will be showcased here soon.
-                                    In the meantime, feel free to check out my GitHub or get in touch!
+                                    I'm currently building high-quality projects that solve real problems.
+                                    This portfolio site itself demonstrates my skills in React, Vite, and
+                                    Tailwind CSS. Check out my GitHub or get in touch to learn more about
+                                    what I'm working on!
                                 </p>
 
                                 <div className="flex gap-4 justify-center pt-4">
