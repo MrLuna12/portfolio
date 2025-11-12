@@ -5,11 +5,13 @@ function HeroSection() {
         <section className="min-h-screen flex items-center justify-center px-6 pt-20">
             <div className="max-w-4xl">
                 <div className="space-y-8">
-                    <p className="text-blue-500 font-mono text-sm">Hi, my name is</p>
-                    <h1 className="text-5xl md:text-7xl font-bold">Michael Luna</h1>
-                    <h2 className="text-3xl md:text-5xl font-bold text-gray-600">
-                        I write code that matters.
-                    </h2>
+                    <div className="space-y-4">
+                        <p className="text-blue-500 font-mono text-sm">Hi, my name is</p>
+                        <h1 className="text-5xl md:text-7xl font-bold">Michael Luna</h1>
+                        <h2 className="text-3xl md:text-5xl font-bold text-gray-600">
+                            I write code that matters.
+                        </h2>
+                    </div>
                     <p className="text-lg text-gray-600 max-w-2xl">
                         Full-stack software engineer who brings a product mindset to development
                         by asking "what problem are we solving?" before diving into implementation.
