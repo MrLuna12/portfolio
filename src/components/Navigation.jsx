@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import { Link } from 'react-router-dom'
 import { Menu, X } from 'lucide-react'
 
 function Navigation() {
@@ -12,12 +11,12 @@ function Navigation() {
         <nav className='fixed top-0 left-0 right-0 z-50 bg-white border-b border-gray-200'>
             <div className='max-w-6xl mx-auto px-6 py-4'>
                 <div className='flex item-center justify-between'>
-                    <Link to='/' className='flex items-center gap-3 hover:opacity-80 transition-opacity'>
+                    <a href='/' className='flex items-center gap-3 hover:opacity-80 transition-opacity'>
                         <div className='w-10 h-10 bg-blue-500 rounded-lg flex items-center justify-center text-white font-bold'>
                             ML
                         </div>
                         <span className='font-mono text-sm text-gray-600'>michael.luna</span>
-                    </Link>
+                    </a>
 
                     <div className='hidden md:flex items-center gap-8'>
                         <a href="#about" className='text-sm text-gray-600 hover:text-gray-900 transition-colors'>
@@ -28,9 +27,9 @@ function Navigation() {
                             Experience
                         </a>
 
-                        <Link to="#projects" className='text-sm text-gray-600 hover:text-gray-900 transition-colors'>
+                        <a href="#projects" className='text-sm text-gray-600 hover:text-gray-900 transition-colors'>
                             Projects
-                        </Link>
+                        </a>
 
                         <a href="#contact" className='text-sm text-gray-600 hover:text-gray-900 transition-colors'>
                             Contact
