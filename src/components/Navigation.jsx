@@ -8,7 +8,7 @@ function Navigation() {
         setIsMobileMenuOpen(false)
     }
     return (
-        <nav className='fixed top-0 left-0 right-0 z-50 bg-white border-b border-gray-200'>
+        <nav className='fixed top-0 left-0 right-0 z-50 border-b border-gray-200 bg-background/90 backdrop-blur-lg'>
             <div className='max-w-6xl mx-auto px-6 py-4'>
                 <div className='flex item-center justify-between'>
                     <a href='/' className='flex items-center gap-3 hover:opacity-80 transition-opacity'>
