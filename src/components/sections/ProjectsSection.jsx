@@ -40,7 +40,7 @@ function ProjectsSection() {
                                     what I'm working on!
                                 </p>
 
-                                <div className="flex gap-4 justify-center pt-4">
+                                <div className="flex flex-col md:flex-row gap-4 justify-center pt-4">
                                     <a
                                         href="https://github.com/MrLuna12"
                                         target="_blank"
