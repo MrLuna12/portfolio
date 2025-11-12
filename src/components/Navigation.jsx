@@ -28,7 +28,7 @@ function Navigation() {
                             Experience
                         </a>
 
-                        <Link to="/projects" className='text-sm text-gray-600 hover:text-gray-900 transition-colors'>
+                        <Link to="#projects" className='text-sm text-gray-600 hover:text-gray-900 transition-colors'>
                             Projects
                         </Link>
 
@@ -47,21 +47,21 @@ function Navigation() {
                 </div>
                 {isMobileMenuOpen && (
                     <div className='md:hidden mt-4 pb-4 flex flex-col gap-4 items-center'>
-                        <Link to="/#about" onClick={closeMobileMenu} className='text-sm text-gray-600 hover:text-gray-900 transition-colors'>
+                        <a href="#about" onClick={closeMobileMenu} className='text-sm text-gray-600 hover:text-gray-900 transition-colors'>
                             About
-                        </Link>
+                        </a>
 
-                        <Link to="/#experience" onClick={closeMobileMenu} className='text-sm text-gray-600 hover:text-gray-900 transition-colors'>
+                        <a href="#experience" onClick={closeMobileMenu} className='text-sm text-gray-600 hover:text-gray-900 transition-colors'>
                             Experience
-                        </Link>
+                        </a>
 
-                        <Link to="/projects" onClick={closeMobileMenu} className='text-sm text-gray-600 hover:text-gray-900 transition-colors'>
+                        <a href="#projects" onClick={closeMobileMenu} className='text-sm text-gray-600 hover:text-gray-900 transition-colors'>
                             Projects
-                        </Link>
+                        </a>
 
-                        <Link to="/#contact" onClick={closeMobileMenu} className='text-sm text-gray-600 hover:text-gray-900 transition-colors'>
+                        <a href="#contact" onClick={closeMobileMenu} className='text-sm text-gray-600 hover:text-gray-900 transition-colors'>
                             Contact
-                        </Link>
+                        </a>
                     </div>
                 )}
             </div>
