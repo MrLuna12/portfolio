@@ -1,5 +1,4 @@
 import { LuGithub, LuLinkedin, LuMail, LuArrowRight } from "react-icons/lu";
-import { Link } from 'react-router-dom'
 
 function HeroSection() {
     return (
@@ -17,16 +16,16 @@ function HeroSection() {
                     </p>
 
                     <div className="flex flex-col sm:flex-row gap-4">
-                        <Link
-                            to="/#projects" className="bg-blue-500 text-white px-6 py-3 rounded-lg hover:bg-blue-600 transition-colors text-lg font-medium flex items-center gap-2 justify-center">
+                        <a
+                            href="#projects" className="bg-blue-500 text-white px-6 py-3 rounded-lg hover:bg-blue-600 transition-colors text-lg font-medium flex items-center gap-2 justify-center">
                             View My Work
                             <LuArrowRight className="ml-2 h-5 w-5" />
-                        </Link>
+                        </a>
 
-                        <Link
-                            to="/#contact" className="border-2 border-gray-300 text-gray-700 px-6 py-3 rounded-lg hover:border-gray-400 hover:bg-gray-50 transition-colors text-lg font-medium">
+                        <a
+                            href="#contact" className="border-2 border-gray-300 text-gray-700 px-6 py-3 rounded-lg hover:border-gray-400 hover:bg-gray-50 transition-colors text-lg font-medium">
                             Get In Touch
-                        </Link>
+                        </a>
                     </div>
 
                     <div className="flex gap-6 pt-4">
