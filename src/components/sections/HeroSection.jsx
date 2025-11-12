@@ -23,7 +23,7 @@ function HeroSection() {
                         </a>
 
                         <a
-                            href="#contact" className="border-2 border-gray-300 text-gray-700 px-6 py-3 rounded-lg hover:border-gray-400 hover:bg-gray-50 transition-colors text-lg font-medium">
+                            href="#contact" className="border-2 flex justify-center border-gray-300 text-gray-700 px-6 py-3 rounded-lg hover:border-gray-400 hover:bg-gray-50 transition-colors text-lg font-medium">
                             Get In Touch
                         </a>
                     </div>
