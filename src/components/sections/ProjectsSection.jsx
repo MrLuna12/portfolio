@@ -29,7 +29,7 @@ function ProjectsSection() {
                             </div>
 
                             <div className="text-center space-y-4 max-w-md">
-                                <h3 className="text-2xl font-bold flex items-center justify-center gap-2">
+                                <h3 className="text-2xl font-bold flex items-center justify-center gap-1.5">
                                     Projects In Development
                                     <HiSparkles className="h-5 w-5 text-blue-500" />
                                 </h3>
@@ -45,7 +45,7 @@ function ProjectsSection() {
                                         href="https://github.com/MrLuna12"
                                         target="_blank"
                                         rel="noopener noreferrer"
-                                        className="bg-blue-500 text-white px-6 py-3 rounded-lg hover:bg-blue-600 transition-colors font-medium flex items-center gap-2"
+                                        className="bg-blue-500 text-white px-6 py-3 rounded-lg hover:bg-blue-600 transition-colors font-medium flex items-center gap-2 justify-center"
                                     >
                                         <FiGithub className="w-5 h-5" />
                                         View GitHub
