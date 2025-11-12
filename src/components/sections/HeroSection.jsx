@@ -8,11 +8,13 @@ function HeroSection() {
                     <p className="text-blue-500 font-mono text-sm">Hi, my name is</p>
                     <h1 className="text-5xl md:text-7xl font-bold">Michael Luna</h1>
                     <h2 className="text-3xl md:text-5xl font-bold text-gray-600">
-                        I build things for the web.
+                        I write code that matters.
                     </h2>
                     <p className="text-lg text-gray-600 max-w-2xl">
-                        I'm a software engineer specializing in building exceptional digital experiences.
-                        Currently, I'm focused on creating accessible, human-centered products with modern web technologies.
+                        Full-stack software engineer who brings a product mindset to development
+                        by asking "what problem are we solving?" before diving into implementation.
+                        Currently at StrongMind building features with Ruby on Rails that help
+                        thousands of students succeed.
                     </p>
 
                     <div className="flex flex-col sm:flex-row gap-4">
