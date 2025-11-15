@@ -50,7 +50,7 @@ function AboutSection() {
                                 to learn, whether it's a new framework, a different approach, or an unfamiliar problem domain.
                             </p>
                             <p>
-                                Before entering the industry, I was a Computer Science Teaching Assistant, which taught me
+                                Before joining StrongMind, I was a Computer Science Teaching Assistant, which taught me
                                 that explaining complex ideas clearly is just as important as implementing them. That
                                 experience still shapes how I work today: with patience, collaboration, and a focus on
                                 continuous growth.
