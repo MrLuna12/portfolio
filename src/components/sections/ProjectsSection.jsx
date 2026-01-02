@@ -29,7 +29,7 @@ function ProjectsSection() {
                             </div>
 
                             <div className="text-center space-y-4 max-w-md">
-                                <h3 className="text-2xl font-bold flex items-center justify-center gap-1.5">
+                                <h3 className="text-2xl font-bold flex items-center justify-center gap-[.13rem] sm:gap-2">
                                     Projects In Development
                                     <HiSparkles className="h-5 w-5 text-blue-500" />
                                 </h3>
