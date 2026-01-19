@@ -20,7 +20,6 @@ function ContactSection() {
                         name="contact" 
                         method="POST" 
                         netlify
-                        action="/#contact"
                         className="space-y-5"
                     >
                         <input type="hidden" name="form-name" value="contact" />
