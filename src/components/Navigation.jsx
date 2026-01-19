@@ -12,8 +12,10 @@ function Navigation() {
             <div className='max-w-6xl mx-auto px-6 py-4'>
                 <div className='flex item-center justify-between'>
                     <a href='/' className='flex items-center gap-3 hover:opacity-80 transition-opacity'>
-                        <div className='w-10 h-10 bg-blue-500 rounded-lg flex items-center justify-center text-white font-bold'>
+                        <div className="font-mono text-2xl font-bold">
+                            <span className="text-blue-500">&lt;</span>
                             ML
+                            <span className="text-blue-500">/&gt;</span>
                         </div>
                         <span className='font-mono text-sm text-gray-600'>michael.luna</span>
                     </a>
