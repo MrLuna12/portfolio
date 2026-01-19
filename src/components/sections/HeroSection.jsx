@@ -52,7 +52,7 @@ function HeroSection() {
                             <span className="sr-only">LinkedIn</span>
                         </a>
                         <a
-                            href="mailto:michaelluna244@gmail.com"
+                             href="#contact"
                             className="text-gray-600 hover:text-blue-500 transition-colors"
                         >
                             <LuMail className="w-6 h-6" />
