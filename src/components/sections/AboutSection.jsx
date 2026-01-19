@@ -4,7 +4,7 @@ function AboutSection() {
     const skills = [
         'JavaScript (ES6+)',
         'Ruby on Rails',
-        'React',
+        'React JS',
         'Stimulus.js',
         'Tailwind CSS',
         'PostgreSQL',
@@ -37,7 +37,7 @@ function AboutSection() {
                             </p>
                             <p>
                                 Currently, I'm a Software Engineer at StrongMind in Arizona, where I work building 
-                                full-stack features with Ruby on Rails and JavaScript that serve thousands of
+                                full-stack features with Ruby on Rails and React JS that serve thousands of
                                 students in educational platforms. What excites me most isn't just writing elegant code;
                                 it's seeing users benefit from what I build. A backend optimization means nothing if it
                                 doesn't make someone's day a little easier.
@@ -56,8 +56,7 @@ function AboutSection() {
                                 continuous growth.
                             </p>
                             <p>
-                                Outside of coding, I'm a runner currently logging 20-25 miles per week (working toward
-                                30-35!). Whether it's on the trails or in the terminal, I'm always pushing forward, one
+                                Outside of coding, I'm a runner currently logging 25-30 miles per week. Whether it's on the trails or in the terminal, I'm always pushing forward, one
                                 step at a time.
                             </p>
                         </div>

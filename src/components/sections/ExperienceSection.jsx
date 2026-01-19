@@ -16,7 +16,7 @@ function ExperienceSection() {
                 'Gained leadership experience by rotating as sprint lead, facilitating planning sessions and retrospectives',
                 'Enhanced code quality through daily pair programming and technical book clubs',
             ],
-            technologies: ['Ruby on Rails', 'Stimulus.js', 'C#', '.NET', 'PostgreSQL', 'AWS'],
+            technologies: ['Ruby on Rails', 'React JS', 'C#', '.NET', 'PostgreSQL', 'AWS'],
         },
         {
             company: 'ONEOK, Inc',
