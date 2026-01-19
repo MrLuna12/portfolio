@@ -19,7 +19,8 @@ function ContactSection() {
                     <form 
                         name="contact" 
                         method="POST" 
-                        data-netlify="true"
+                        netlify
+                        action="/#contact"
                         className="space-y-5"
                     >
                         <input type="hidden" name="form-name" value="contact" />
